@@ -81,6 +81,7 @@ THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "subscriptions"
 ]
 
 LOCAL_APPS = [
@@ -291,3 +292,8 @@ SOCIALACCOUNT_ADAPTER = (
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+# Set your currency type
+DFS_CURRENCY_LOCALE = 'en_us'
+
+# Specify your base template file
+DFS_BASE_TEMPLATE = 'base.html'

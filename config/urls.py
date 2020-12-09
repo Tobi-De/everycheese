@@ -28,6 +28,7 @@ urlpatterns = [
         "cheeses/",
         include("everycheese.cheeses.urls", namespace="cheeses"),
     ),
+    path("subscriptions/", include("subscriptions.urls")),
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
